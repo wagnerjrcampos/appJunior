@@ -11,10 +11,11 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'games', loadChildren: './pages/games/games.module#GamesPageModule' },
+  { path: 'games-details', loadChildren: './pages/games-details/games-details.module#GamesDetailsPageModule' },
+  { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'twitch', loadChildren: './pages/twitch/twitch.module#TwitchPageModule' },
+  { path: 'twitch-details', loadChildren: './pages/twitch-details/twitch-details.module#TwitchDetailsPageModule' },
 ];
 
 @NgModule({

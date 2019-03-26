@@ -16,9 +16,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Games',
+      url: '/games',
+      icon: 'md-game-controller-b'
+    },
+    {
+      title: 'Twitch',
+      url: '/twitch',
+      icon: 'md-game-controller-b'
     }
   ];
 
