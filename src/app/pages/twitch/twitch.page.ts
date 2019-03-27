@@ -7,7 +7,10 @@ import { TwitchdbService } from 'src/app/services/twitchdb.service';
   styleUrls: ['./twitch.page.scss'],
 })
 export class TwitchPage implements OnInit {
-  twitch = [];
+  
+  games = [];
+  width = 355;
+  height = 200;
 
   constructor(private mDBService: TwitchdbService) { }
 
@@ -23,8 +26,9 @@ export class TwitchPage implements OnInit {
         //converte para obj JSON
         resposta = JSON.parse(resposta);
         //atribui a resposta do array de filmes
-        //this.games = resposta;
-        console.log(resposta);
+        this.games = resposta.top;
+
+        console.log(resposta.top);
       },
       error=>{
         console.log(error);

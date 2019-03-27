@@ -6,7 +6,7 @@ import { Http } from '@angular/http';
 })
 export class GamesdbService {
 
-  private URL_API:string = "https://tastedive.com/api/s";
+  private URL_API:string = "https://tastedive.com/api/";
   private API_KEY:string = "333221-GamesBR-ESDHGW1Q";
 
   constructor(private http: Http) { }

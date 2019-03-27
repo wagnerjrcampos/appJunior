@@ -21,7 +21,7 @@ export class AppComponent {
       icon: 'md-game-controller-b'
     },
     {
-      title: 'Twitch',
+      title: 'Games em alta Twitch',
       url: '/twitch',
       icon: 'md-game-controller-b'
     }
