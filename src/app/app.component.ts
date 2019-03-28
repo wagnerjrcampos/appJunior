@@ -16,14 +16,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Games',
-      url: '/games',
-      icon: 'md-game-controller-b'
-    },
-    {
       title: 'Games em alta Twitch',
       url: '/twitch',
-      icon: 'md-game-controller-b'
+      icon: 'logo-twitch'
+    },
+    {
+      title: 'Youtube',
+      url: '/youtube',
+      icon: 'logo-youtube'
     }
   ];
 

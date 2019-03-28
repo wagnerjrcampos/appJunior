@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GamesdbService } from './gamesdb.service';
+import { YoutubedbService } from './youtubedb.service';
 
-describe('GamesdbService', () => {
+describe('YoutubedbService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: GamesdbService = TestBed.get(GamesdbService);
+    const service: YoutubedbService = TestBed.get(YoutubedbService);
     expect(service).toBeTruthy();
   });
 });
