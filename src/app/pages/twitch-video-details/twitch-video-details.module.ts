@@ -5,12 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { YoutubeDetailsPage } from './youtube-details.page';
+import { TwitchVideoDetailsPage } from './twitch-video-details.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: YoutubeDetailsPage
+    component: TwitchVideoDetailsPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [YoutubeDetailsPage]
+  declarations: [TwitchVideoDetailsPage]
 })
-export class YoutubeDetailsPageModule {}
+export class TwitchVideoDetailsPageModule {}

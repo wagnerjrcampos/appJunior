@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YoutubeDetailsPage } from './youtube-details.page';
+import { TwitchVideoDetailsPage } from './twitch-video-details.page';
 
-describe('YoutubeDetailsPage', () => {
-  let component: YoutubeDetailsPage;
-  let fixture: ComponentFixture<YoutubeDetailsPage>;
+describe('TwitchVideoDetailsPage', () => {
+  let component: TwitchVideoDetailsPage;
+  let fixture: ComponentFixture<TwitchVideoDetailsPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ YoutubeDetailsPage ],
+      declarations: [ TwitchVideoDetailsPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(YoutubeDetailsPage);
+    fixture = TestBed.createComponent(TwitchVideoDetailsPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

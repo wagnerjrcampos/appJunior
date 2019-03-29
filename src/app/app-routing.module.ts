@@ -15,8 +15,9 @@ const routes: Routes = [
   { path: 'games-details', loadChildren: './pages/games-details/games-details.module#GamesDetailsPageModule' },
   { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
   { path: 'twitch', loadChildren: './pages/twitch/twitch.module#TwitchPageModule' },
-  { path: 'twitch-details', loadChildren: './pages/twitch-details/twitch-details.module#TwitchDetailsPageModule' },  { path: 'youtube', loadChildren: './pages/youtube/youtube.module#YoutubePageModule' },
-  { path: 'youtube-details', loadChildren: './pages/youtube-details/youtube-details.module#YoutubeDetailsPageModule' },
+  { path: 'twitch-details', loadChildren: './pages/twitch-details/twitch-details.module#TwitchDetailsPageModule' },  { path: 'twitch-video', loadChildren: './pages/twitch-video/twitch-video.module#TwitchVideoPageModule' },
+  { path: 'twitch-video-details', loadChildren: './pages/twitch-video-details/twitch-video-details.module#TwitchVideoDetailsPageModule' },
+
 
 ];
 

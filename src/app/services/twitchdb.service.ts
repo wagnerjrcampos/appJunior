@@ -17,7 +17,7 @@ export class TwitchdbService {
   constructor(private http: HttpClient) { }
 
   //getTopTwitch(){
- //   return this.http.get(`${this.URL_API}kraken/games/top?client_id=${this.API_KEY}`)
+ //   return this.http.get(`${this.URL_API}kraken/games/top?client_id=qvs9gnha7qfezyg5vrmhcyw7qfv391${this.API_KEY}`)
   //}
   getTwitch(param:string):Observable<any>{
     const url = `${this.URL_API}kraken/${param}?client_id=${this.API_KEY}`

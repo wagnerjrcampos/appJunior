@@ -20,11 +20,6 @@ export class AppComponent {
       url: '/twitch',
       icon: 'logo-twitch'
     },
-    {
-      title: 'Youtube',
-      url: '/youtube',
-      icon: 'logo-youtube'
-    }
   ];
 
   constructor(
