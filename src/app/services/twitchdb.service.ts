@@ -23,7 +23,7 @@ export class TwitchdbService {
     const url = `${this.URL_API}kraken/${param}?client_id=${this.API_KEY}`
     return this.http.get<any>(url).pipe(
       tap(_ => console.log(`O paramentro requisitado foi: ${param}`)),
-      catchError(this.handleError<any>(`Falha no getMovies parametro =${param}`))
+      catchError(this.handleError<any>(`Falha no getGames parametro =${param}`))
     );
   }
 

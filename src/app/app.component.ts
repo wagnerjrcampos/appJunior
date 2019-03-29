@@ -20,6 +20,11 @@ export class AppComponent {
       url: '/twitch',
       icon: 'logo-twitch'
     },
+    {
+      title: 'Videos em alta Twitch',
+      url: '/twitch-video',
+      icon: 'logo-twitch'
+    },
   ];
 
   constructor(
