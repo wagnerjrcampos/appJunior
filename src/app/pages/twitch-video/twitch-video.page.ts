@@ -7,9 +7,12 @@ import { TwitchVideodbService } from 'src/app/services/twitch-videodb.service';
   templateUrl: './twitch-video.page.html',
   styleUrls: ['./twitch-video.page.scss'],
 })
+
 export class TwitchVideoPage implements OnInit {
 
   videos = [];
+  width = 355;
+  height = 200;
 
   private param:string = "videos/top";
 
@@ -32,8 +35,8 @@ export class TwitchVideoPage implements OnInit {
         //converte para obj JSON
         //resposta = JSON.parse(resposta);
         //atribui a resposta do array de filmes
-        //this.videos = data.top;
-        console.log(resposta.top);
+        this.videos = data.videos;
+        //console.log(resposta);
         loading.dismiss();
       },
       error=>{

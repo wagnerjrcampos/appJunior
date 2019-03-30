@@ -21,7 +21,8 @@ export class TwitchVideodbService {
   //}
   getTwitchVideo(param:string):Observable<any>{
     const url = `${this.URL_API}kraken/${param}?client_id=${this.API_KEY}`
-    return this.http.get<any>(url).pipe(
+    console.log(url);
+    return this.http.get<any>(url, httpOption).pipe(
       tap(_ => console.log(`O paramentro requisitado foi: ${param}`)),
       catchError(this.handleError<any>(`Falha no getVideo parametro =${param}`))
     );

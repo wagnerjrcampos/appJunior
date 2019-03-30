@@ -5,5 +5,17 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card class="welcome-card" *ngFor="let v of videos">
+    <ion-img src="{{v.preview}"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Game: {{v.game}}</ion-card-subtitle>
+      <ion-card-subtitle>Titulo: {{v.title}}</ion-card-subtitle>
+      <ion-card-subtitle>views: {{v.views}}</ion-card-subtitle>
+      <ion-card-subtitle>Canal: {{v.channel.name}}</ion-card-subtitle>
+      <ion-card-subtitle>language: {{v.language}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p></p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
