@@ -21,9 +21,9 @@ export class TwitchPage implements OnInit {
     this.consultaTwitch()
   }
 
-  async consultaTwitch(){
+  async consultaTwitch(index?){
     const loading = await this.LoadingController.create({
-      message: 'Carregando Games em Alta...'
+      message: 'Carreagando Games em Alta...'
     });
 
     await loading.present();
@@ -43,6 +43,12 @@ export class TwitchPage implements OnInit {
         console.log(error);
         loading.dismiss();
       }
-    ).add();    
+    ).add();  
+    }  
+    doRefresh(event) {
+      this.consultaTwitch('Caiu');
+      setTimeout(() => {
+        event.target.complete();
+      }, 2000);
+    }
   }
-}

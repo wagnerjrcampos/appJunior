@@ -35,5 +35,4 @@ export class TwitchdbService {
     };
   }
 }
-
 //https://api.twitch.tv/kraken/games/top?client_id=qvs9gnha7qfezyg5vrmhcyw7qfv391

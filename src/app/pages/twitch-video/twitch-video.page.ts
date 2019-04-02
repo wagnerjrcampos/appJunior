@@ -21,10 +21,12 @@ export class TwitchVideoPage implements OnInit {
   ngOnInit() {
     this.consultaTwitchVideo()
   }
-  async consultaTwitchVideo(){
+  
+  async consultaTwitchVideo(index?){
     const loading = await this.LoadingController.create({
-      message: 'Carregando Videos em Alta...'
+      message: 'Carreagando Videos em Alta...'
     });
+
 
     await loading.present();
 
@@ -44,5 +46,11 @@ export class TwitchVideoPage implements OnInit {
         loading.dismiss();
       }
     ).add();    
+  }  
+  doRefresh(event) {
+    this.consultaTwitchVideo('Caiu');
+    setTimeout(() => {
+      event.target.complete();
+    }, 2000);
   }
 }

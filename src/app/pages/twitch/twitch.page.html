@@ -8,11 +8,30 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card" *ngFor="let g of games">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Atualizar"
+          refreshingSpinner="circles"
+          refreshingText="Atualizando...">
+          </ion-refresher-content>
+    </ion-refresher>
+    <ion-card class="welcome-card" *ngFor="let g of games" >
         <ion-img [src]="g.game.box.large"></ion-img>
         <ion-card-header>
           <ion-card-subtitle>Games</ion-card-subtitle>
           <ion-card-title>{{g.game.name}}</ion-card-title>
+          <ion-item>
+              <ion-label>Avaliação</ion-label>
+              <ion-select placeholder="Selecione" (ionChange)="registraAvaliacao()" [(ngModel)]="avaliacao.rating">
+                <ion-select-option value="0">0</ion-select-option>
+                <ion-select-option value="1">1</ion-select-option>
+                <ion-select-option value="2">2</ion-select-option>
+                <ion-select-option value="3">3</ion-select-option>
+                <ion-select-option value="4">4</ion-select-option>
+                <ion-select-option value="5">5</ion-select-option>
+              </ion-select>
+            </ion-item>
         </ion-card-header>
         <ion-card-content>
           <p>Popularidade: {{g.game.popularity}}</p>
