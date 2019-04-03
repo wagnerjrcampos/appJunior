@@ -6,7 +6,6 @@
     <ion-title>twitchVideo</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
     <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
         <ion-refresher-content
@@ -17,7 +16,7 @@
           </ion-refresher-content>
       </ion-refresher>
   <ion-card class="welcome-card" *ngFor="let v of videos">
-    <ion-img src="{{v.preview}"></ion-img>
+    <ion-img src="{{v.preview}}"  (click)="href.location='{{v.url}}'"></ion-img>
     <ion-card-header>
       <ion-card-subtitle>Game: {{v.game}}</ion-card-subtitle>
       <ion-card-subtitle>Titulo: {{v.title}}</ion-card-subtitle>

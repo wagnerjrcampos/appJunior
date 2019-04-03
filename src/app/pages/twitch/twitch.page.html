@@ -19,11 +19,11 @@
     <ion-card class="welcome-card" *ngFor="let g of games" >
         <ion-img [src]="g.game.box.large"></ion-img>
         <ion-card-header>
-          <ion-card-subtitle>Games</ion-card-subtitle>
+          <ion-card-subtitle>Game</ion-card-subtitle>
           <ion-card-title>{{g.game.name}}</ion-card-title>
           <ion-item>
               <ion-label>Avaliação</ion-label>
-              <ion-select placeholder="Selecione" (ionChange)="registraAvaliacao()" [(ngModel)]="avaliacao.rating">
+              <ion-select placeholder="Selecione" (ionChange)="registraAvaliacao(g.game._id)" name="game_avaliacao_{{g.game._id}}" [(ngModel)]="avaliacao.rating" >
                 <ion-select-option value="0">0</ion-select-option>
                 <ion-select-option value="1">1</ion-select-option>
                 <ion-select-option value="2">2</ion-select-option>

@@ -26,8 +26,11 @@ export class SlidesPage implements OnInit {
     }
   ];
 
+  slideOpts = {
+    effect: 'flip'
+  };
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) { }
+  constructor() { }
 
   ngOnInit() {
   }
